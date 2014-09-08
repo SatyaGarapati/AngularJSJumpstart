@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html ng-app="myapp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="scripts\angular.min.js"></script>
+    <script>
+        var app = angular.module("myapp", []);
+        app.controller("mycontroller", ['$scope', function ($scope) {
+            $scope.test = "World";
+        }
+        ]);
+    </script>
+</head>
+<body>
+    <div ng-controller="mycontroller">
+        Hello {{test}}
+    </div>
+</body>
+</html>
